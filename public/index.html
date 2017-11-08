@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Websocket Demo with Socket.io</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./material.min.css">
+  <script src="./material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea">
+
+  <div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Live Users</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Users</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#">Max</a>
+      <a class="mdl-navigation__link" href="#">Arnold</a>
+      <a class="mdl-navigation__link" href="#">Nyah</a>
+      <a class="mdl-navigation__link" href="#">Jesla</a>
+      <a class="mdl-navigation__link" href="#">Um Nyobe</a>
+      <a class="mdl-navigation__link" href="#">Daisy</a>
+      <a class="mdl-navigation__link" href="#">Nappy</a>
+      <a class="mdl-navigation__link" href="#">Ahidjo</a>
+
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage " placeholder="Type here..."/>
+    </li>
+    <li class="login page">
+      <div class="form">
+          <p> This app code can be found on my Github at <a href="#"> Code </p>
+        <h3 class="title">Enter your Nick to join Chat.</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>
+  </ul>
+  <script src="jquery.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
